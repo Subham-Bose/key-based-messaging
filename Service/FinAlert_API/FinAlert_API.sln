@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.4.11612.150 stable
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinAlert_API", "FinAlert_API.csproj", "{31226A1A-44AB-AB17-BE64-DD9BD2F8A920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinAlert_Service", "..\FinAlert_Service\FinAlert_Service.csproj", "{5703134D-11C2-48AD-B4B0-321183411444}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31226A1A-44AB-AB17-BE64-DD9BD2F8A920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31226A1A-44AB-AB17-BE64-DD9BD2F8A920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31226A1A-44AB-AB17-BE64-DD9BD2F8A920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31226A1A-44AB-AB17-BE64-DD9BD2F8A920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5703134D-11C2-48AD-B4B0-321183411444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5703134D-11C2-48AD-B4B0-321183411444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5703134D-11C2-48AD-B4B0-321183411444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5703134D-11C2-48AD-B4B0-321183411444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71C458F3-50BB-4AEC-ACAC-9DDF481B3357}
+	EndGlobalSection
+EndGlobal
