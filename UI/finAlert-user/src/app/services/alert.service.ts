@@ -2,6 +2,7 @@ import { inject, Injectable, signal } from '@angular/core';
 import { parseAlertString, ParsedAlert } from '../models/api-response.model';
 import { catchError, map, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -19,7 +20,7 @@ export class Alert {
     this.error.set(null);
 
     this.http
-      .get(`/api/alerts/${choice}`, { responseType: 'text' })
+      .get(`${environment.backendAlertUrl}/${choice}`, { responseType: 'text' })
       .pipe(
         map((raw) => parseAlertString(raw)),
         catchError((err) => {

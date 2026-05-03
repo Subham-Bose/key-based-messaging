@@ -1,5 +1,4 @@
-﻿using FinAlert_Service.Implementations;
-using FinAlert_Service.Interfaces;
+﻿using FinAlert_Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinAlert_API.Controller

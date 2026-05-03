@@ -1,11 +1,11 @@
 <nav class="sidebar">
-  <span class="sidebar-label">Simulate Action</span>
+  <span class="sidebar-label">Fetch backend alert</span>
 
   @for (action of actions; track action.key) {
     <button
       class="action-btn"
       [class.active]="alertService.alert()?.messageKey === action.key"
-      (click)="alertService.triggerMock(action.raw)"
+      (click)="alertService.fetchAlert(action.id)"
     >
       <span class="dot" [ngClass]="'dot-' + action.sev"></span>
       {{ action.label }}
