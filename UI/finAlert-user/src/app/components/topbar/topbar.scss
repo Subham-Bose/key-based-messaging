@@ -1,0 +1,70 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+  background: var(--color-background-primary);
+  border-radius: 12px 12px 0 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #185fa5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  &-sub {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.03em;
+  }
+}
+
+.lang-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.lang-btn {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: 20px;
+  border: 0.5px solid var(--color-border-secondary);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.18s;
+
+  &.active {
+    background: #185fa5;
+    color: #fff;
+    border-color: #185fa5;
+  }
+
+  &:hover:not(.active) {
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "LOGIN": {
+    "LOGIN_SUCCESS": "Autenticado correctamente. La sesión expira en {{0}} minutos.",
+    "WELCOME_USER": "¡Bienvenido de nuevo, {{0}}! Tienes {{1}} nueva(s) alerta(s).",
+    "LOGIN_ATTEMPTS_REMAINING": "Te quedan {{0}} intento(s) antes de que tu cuenta sea bloqueada.",
+    "USER_LOCKED": "Tu cuenta ha sido bloqueada después de {{0}} intentos fallidos. Por favor, contacta con soporte."
+  },
+  "MONEY": {
+    "TRANSFER_SUCCESS": "₹{{0}} enviados a {{1}}. Tu nuevo saldo es ₹{{2}}.",
+    "EMI_DUE": "Tu EMI de ₹{{0}} vence en {{1}} día(s), el {{2}}.",
+    "BALANCE_BELOW_THRESHOLD": "Tu saldo ₹{{0}} está por debajo del mínimo requerido ₹{{1}}. Agrega fondos para evitar cargos.",
+    "DAILY_LIMIT_REACHED": "Has alcanzado tu límite diario de ₹{{0}}. {{1}} transacción(es) realizadas hoy."
+  }
+}

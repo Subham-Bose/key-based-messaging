@@ -1,0 +1,103 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-right: 0.5px solid var(--color-border-tertiary);
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+
+.tag {
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+
+  &-net {
+    background: #e6f1fb;
+    color: #0c447c;
+  }
+}
+
+.json-box {
+  flex: 1;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 8px;
+  padding: 14px;
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  line-height: 2;
+  min-height: 260px;
+}
+
+.j-indent {
+  padding-left: 16px;
+  display: block;
+}
+.j-nested {
+  padding-left: 32px;
+}
+.j-gray {
+  color: var(--color-text-tertiary);
+}
+.j-key {
+  color: #185fa5;
+}
+.j-str {
+  color: #3b6d11;
+}
+.j-num {
+  color: #ba7517;
+}
+.j-empty {
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+}
+
+.j-sev-info {
+  color: #185fa5;
+}
+.j-sev-warn {
+  color: #ba7517;
+}
+.j-sev-err {
+  color: #a32d2d;
+}
+
+.raw-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+}
+
+.raw-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+}
+
+.raw-value {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  word-break: break-all;
+}

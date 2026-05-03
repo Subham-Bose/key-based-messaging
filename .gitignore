@@ -1,0 +1,51 @@
+# =========================
+# GENERAL
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# =========================
+# NODE / ANGULAR
+# =========================
+node_modules/
+dist/
+.angular/
+.cache/
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# =========================
+# .NET
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code / VS
+.vscode/
+.vs/
+.idea/
+
+# Logs
+*.log
+
+# =========================
+# PACKAGE LOCK (optional)
+# =========================
+# keep if you want reproducible builds
+# package-lock.json
+
+# =========================
+# OS
+# =========================
+*.DS_Store
+Thumbs.db

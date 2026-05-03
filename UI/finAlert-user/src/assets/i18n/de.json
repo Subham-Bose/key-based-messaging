@@ -1,0 +1,14 @@
+{
+  "LOGIN": {
+    "LOGIN_SUCCESS": "Erfolgreich authentifiziert. Die Sitzung läuft in {{0}} Minuten ab.",
+    "WELCOME_USER": "Willkommen zurück, {{0}}! Sie haben {{1}} neue Benachrichtigung(en).",
+    "LOGIN_ATTEMPTS_REMAINING": "{{0}} Versuch(e) verbleiben, bevor Ihr Konto gesperrt wird.",
+    "USER_LOCKED": "Ihr Konto wurde nach {{0}} fehlgeschlagenen Versuchen gesperrt. Bitte kontaktieren Sie den Support."
+  },
+  "MONEY": {
+    "TRANSFER_SUCCESS": "₹{{0}} wurden an {{1}} gesendet. Ihr neuer Kontostand beträgt ₹{{2}}.",
+    "EMI_DUE": "Ihre EMI von ₹{{0}} ist in {{1}} Tag(en) am {{2}} fällig.",
+    "BALANCE_BELOW_THRESHOLD": "Ihr Kontostand ₹{{0}} liegt unter dem Mindestbetrag von ₹{{1}}. Bitte zahlen Sie Geld ein, um Gebühren zu vermeiden.",
+    "DAILY_LIMIT_REACHED": "Sie haben Ihr tägliches Limit von ₹{{0}} erreicht. {{1}} Transaktion(en) wurden heute durchgeführt."
+  }
+}

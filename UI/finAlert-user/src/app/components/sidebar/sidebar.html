@@ -1,0 +1,14 @@
+<nav class="sidebar">
+  <span class="sidebar-label">Simulate Action</span>
+
+  @for (action of actions; track action.key) {
+    <button
+      class="action-btn"
+      [class.active]="alertService.alert()?.messageKey === action.key"
+      (click)="alertService.triggerMock(action.raw)"
+    >
+      <span class="dot" [ngClass]="'dot-' + action.sev"></span>
+      {{ action.label }}
+    </button>
+  }
+</nav>

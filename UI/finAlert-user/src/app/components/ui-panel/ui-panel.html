@@ -1,0 +1,73 @@
+<section class="panel">
+  <div class="panel-title">
+    Angular 21 — Translated UI
+    <span class="tag tag-ng">Angular 21</span>
+  </div>
+
+  <div class="ui-area">
+    @if (alertService.loading()) {
+      <div class="loading-state">Fetching from backend…</div>
+    }
+
+    @if (alertService.error(); as err) {
+      <div class="sev-banner sev-error">
+        <div class="sev-label">Error</div>
+        <div class="sev-msg">{{ err }}</div>
+      </div>
+    }
+
+    @if (alertService.alert(); as a) {
+      <div class="sev-banner" [ngClass]="'sev-' + a.severity.toLowerCase()">
+        <div class="sev-label">{{ a.severity }}</div>
+        <div class="sev-msg">{{ a.messageKey | translate: a.params }}</div>
+      </div>
+
+      <div class="key-row">
+        <code class="key-chip">{{ a.messageKey }}</code>
+        <span class="arrow">→</span>
+        <span class="i18n-path">assets/i18n/{{ activeLang }}.json</span>
+      </div>
+
+      @if (paramEntries().length) {
+        <div class="params-box">
+          <div class="params-title">Injected params</div>
+          <div class="params-grid">
+            @for (entry of paramEntries(); track entry.key) {
+              <div class="param-row">
+                <code class="param-key">{{ '{{' }} {{ entry.key }} {{ '}}' }}</code>
+                <strong class="param-val">{{ entry.value }}</strong>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    } @else if (!alertService.loading()) {
+      <div class="empty-state">
+        <div class="empty-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1" />
+            <path
+              d="M8 5v4M8 11v.5"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        Trigger an action to see translation
+      </div>
+    }
+  </div>
+
+  <div class="flow-section">
+    <div class="panel-title" style="margin-bottom: 8px">Translation pipeline</div>
+    <div class="flow-steps">
+      @for (step of flowSteps; track step.id) {
+        <div class="flow-step" [class.done]="isStepDone(step.id)">
+          <div class="flow-num">{{ step.id }}</div>
+          <div class="flow-text" [innerHTML]="step.label"></div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

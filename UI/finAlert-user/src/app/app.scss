@@ -1,0 +1,15 @@
+/* app.component.scss */
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 580px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  min-height: 530px;
+}

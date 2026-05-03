@@ -1,0 +1,14 @@
+{
+  "LOGIN": {
+    "LOGIN_SUCCESS": "Authenticated successfully. Session expires in {{0}} minutes.",
+    "WELCOME_USER": "Welcome back, {{0}}! You have {{1}} new alert(s).",
+    "LOGIN_ATTEMPTS_REMAINING": "{{0}} attempt(s) remaining before your account is locked.",
+    "USER_LOCKED": "Your account has been locked after {{0}} failed attempts. Please contact support."
+  },
+  "MONEY": {
+    "TRANSFER_SUCCESS": "₹{{0}} has been sent to {{1}}. Your new balance is ₹{{2}}.",
+    "EMI_DUE": "Your EMI of ₹{{0}} is due in {{1}} day(s) on {{2}}.",
+    "BALANCE_BELOW_THRESHOLD": "Your balance ₹{{0}} is below the minimum required ₹{{1}}. Please add funds to avoid charges.",
+    "DAILY_LIMIT_REACHED": "You have reached your daily transaction limit of ₹{{0}}. {{1}} transaction(s) processed today."
+  }
+}

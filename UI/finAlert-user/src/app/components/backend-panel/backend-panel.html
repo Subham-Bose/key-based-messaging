@@ -1,0 +1,56 @@
+<section class="panel">
+  <div class="panel-title">
+    .NET 10 API Response
+    <span class="tag tag-net">.NET 10</span>
+  </div>
+
+  <div class="json-box">
+    @if (alert(); as a) {
+      <span class="j-gray">&#123;</span>
+      <br />
+      <span class="j-indent">
+        <span class="j-key">"Code"</span>
+        <span class="j-gray">: </span>
+        <span class="j-str">"{{ a.messageKey }}"</span>,
+      </span>
+      <br />
+      <span class="j-indent">
+        <span class="j-key">"MessageKey"</span>
+        <span class="j-gray">: </span>
+        <span class="j-str">"{{ a.messageKey }}"</span>,
+      </span>
+      <br />
+      <span class="j-indent">
+        <span class="j-key">"Params"</span>
+        <span class="j-gray">: &#123;</span>
+      </span>
+      <br />
+      @for (entry of paramEntries(); track entry.key) {
+        <span class="j-indent j-nested">
+          <span class="j-key">"{{ entry.key }}"</span>
+          <span class="j-gray">: </span>
+          <span [class]="isNumeric(entry.value) ? 'j-num' : 'j-str'">
+            {{ isNumeric(entry.value) ? entry.value : '"' + entry.value + '"' }}
+          </span>
+        </span>
+        <br />
+      }
+      <span class="j-indent"><span class="j-gray">&#125;,</span></span>
+      <br />
+      <span class="j-indent">
+        <span class="j-key">"Severity"</span>
+        <span class="j-gray">: </span>
+        <span [ngClass]="severityClass()"> "{{ alert()?.severity }}" </span>
+      </span>
+      <br />
+      <span class="j-gray">&#125;</span>
+    } @else {
+      <span class="j-empty">← Select an action to simulate a backend response</span>
+    }
+  </div>
+
+  <div class="raw-row">
+    <span class="raw-label">Raw string</span>
+    <code class="raw-value">{{ alert()?.raw ?? '—' }}</code>
+  </div>
+</section>

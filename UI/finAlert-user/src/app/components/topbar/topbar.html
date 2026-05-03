@@ -1,0 +1,23 @@
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-icon">
+      <svg viewBox="0 0 16 16" fill="white">
+        <path
+          d="M2 4h12v1.5H2zm0 3h12v1.5H2zm0 3h7v1.5H2zm9.5 0l1.5 1.5 1.5-1.5 1 1-2.5 2.5L9.5 12l1-1z"
+        />
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">FinAlert</div>
+      <div class="brand-sub">Backend-Driven Localization Demo</div>
+    </div>
+  </div>
+
+  <div class="lang-tabs">
+    @for (lang of langs; track lang) {
+      <button class="lang-btn" [class.active]="activeLang === lang" (click)="setLang(lang)">
+        {{ lang.toUpperCase() }}
+      </button>
+    }
+  </div>
+</header>
